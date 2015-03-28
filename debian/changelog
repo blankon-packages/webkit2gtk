@@ -4,6 +4,8 @@ webkit2gtk (2.8.0-blankon1) tambora; urgency=medium
   * Change debian:
     - libwebkit2gtk-4.0-doc.install: fix source doc
     - libwebkit2gtk-4.0-37.symbols: added new symbols
+    - patches: remove patch for arch* not used in BlankOn
+    - patches: remove patch already in upstream
 
  -- Mahyuddin <yudi.al@gmail.com>  Thu, 26 Mar 2015 10:55:40 +0700
 
