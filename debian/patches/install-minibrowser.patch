@@ -1,0 +1,28 @@
+From: Alberto Garcia <berto@igalia.com>
+Subject: Install the MiniBrowser binary
+Forwarded: not-needed
+Index: webkit2gtk-2.7.92/Tools/MiniBrowser/gtk/main.c
+===================================================================
+--- webkit2gtk-2.7.92.orig/Tools/MiniBrowser/gtk/main.c
++++ webkit2gtk-2.7.92/Tools/MiniBrowser/gtk/main.c
+@@ -256,9 +256,9 @@ aboutURISchemeRequestCallback(WebKitURIS
+ int main(int argc, char *argv[])
+ {
+     gtk_init(&argc, &argv);
+-#if defined(DEVELOPMENT_BUILD)
++
+     g_setenv("WEBKIT_INJECTED_BUNDLE_PATH", WEBKIT_INJECTED_BUNDLE_PATH, FALSE);
+-#endif
++
+ 
+     const gchar *multiprocess = g_getenv("MINIBROWSER_MULTIPROCESS");
+     if (multiprocess && *multiprocess) {
+Index: webkit2gtk-2.7.92/CMakeLists.txt
+===================================================================
+--- webkit2gtk-2.7.92.orig/CMakeLists.txt
++++ webkit2gtk-2.7.92/CMakeLists.txt
+@@ -177,3 +177,4 @@ add_subdirectory(Source)
+ if (ENABLE_TOOLS)
+     add_subdirectory(Tools)
+ endif ()
++add_subdirectory(Tools/MiniBrowser/gtk)

@@ -1,3 +1,9 @@
+webkit2gtk (2.8.0-blankon3) tambora; urgency=medium
+
+  * Rebuild 
+
+ -- Mahyuddin <yudi.al@gmail.com>  Mon, 06 Apr 2015 16:22:19 +0700
+
 webkit2gtk (2.8.0-blankon1) tambora; urgency=medium
 
   * New upstream release

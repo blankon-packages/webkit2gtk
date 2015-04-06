@@ -2,7 +2,7 @@ Source: webkit2gtk
 Priority: optional
 Section: web
 Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
-XSBC-original-Maintainer: Debian WebKit Maintainers <pkg-webkit-maintainers@lists.alioth.debian.org>
+XSBC-Original-Maintainer: Debian WebKit Maintainers <pkg-webkit-maintainers@lists.alioth.debian.org>
 Uploaders: Gustavo Noronha Silva <kov@debian.org>,
            Emilio Pozuelo Monfort <pochu@debian.org>,
            Alberto Garcia <berto@igalia.com>
